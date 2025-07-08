@@ -247,5 +247,7 @@ GET /api/v1/jobs/getjobs
 
 ---
 ![Job Importer Dashboard](./assets/jobimporter_final_image.png)
+![Job Importer Dashboard](https://raw.githubusercontent.com/odinwizard/Job-Importer/master/assets/jobimporter_final_image.png)
+
 
 
