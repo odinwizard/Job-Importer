@@ -246,8 +246,8 @@ GET /api/v1/jobs/getjobs
 - Deploy to Vercel 
 
 ---
-![Job Importer Dashboard](./assets/jobimporter_final_image.png)
-![Job Importer Dashboard](https://raw.githubusercontent.com/odinwizard/Job-Importer/master/assets/jobimporter_final_image.png)
+![Job Importer Dashboard](./Assets/jobimporter_final_image.png)
+
 
 
 
