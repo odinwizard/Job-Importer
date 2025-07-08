@@ -49,6 +49,11 @@ const JobSchema = new mongoose.Schema({
         metadata: { 
             type: mongoose.Schema.Types.Mixed 
         },
+        createdAt: {
+            type: Date,
+            default: Date.now,
+            expires: 86400, // 86400 seconds = 1 day
+    },
 }, {timestamps: true});
 
 module.exports = mongoose.model("Job", JobSchema);

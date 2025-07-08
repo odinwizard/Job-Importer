@@ -1,10 +1,11 @@
-
-const app = require('./app');
 const dotenv = require("dotenv");
+dotenv.config();
+const app = require('./app');
+
 
 const connectDB = require("./config/database");
 const { connectRedis } = require('./config/redis');
-dotenv.config();
+
 
 const PORT = process.env.PORT || 8000;
 

@@ -5,10 +5,18 @@ const ImportLog = require("../models/ImportLog.Model");
 
 const jobQueue = new Queue("job-import", {
     redis: {
-        host: process.env.REDIS_HOST || 'localhost',
+        host: process.env.REDIS_HOST ,
         port: process.env.REDIS_PORT || 6379
     }
 });
+// const jobQueue = new Queue("job-import", {
+//   redis: {
+//     host: process.env.REDIS_HOST,
+//     port: parseInt(process.env.REDIS_PORT),
+//     password: process.env.REDIS_PASSWORD,
+//     tls: {} // <-- required for Redis Cloud (TLS encrypted connection)
+//   }
+// });
 
 // Process jobs with concurrency
 jobQueue.process(5, async (job) => {

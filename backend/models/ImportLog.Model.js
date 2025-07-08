@@ -7,7 +7,8 @@ const ImportLogSchema = new mongoose.Schema({
                 },
                 timestamp: { 
                     type: Date, 
-                    default: Date.now 
+                    default: Date.now,
+                    expires: 86400
                 },
                 totalFetched: { 
                     type: Number, 
